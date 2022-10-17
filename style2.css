@@ -66,44 +66,27 @@ nav a {
     display: flex;
     flex-direction: row;
     align-items: center;   
-    flex: space-evenly;
+    flex: space-between;
 }
 
 
 
 
-/* .first-section-container{
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "perfume-image-container perfume-desc-container scent-chart-container";
-    height: 100px;
 
-}
 
 
    
   .perfume-image-container {
-    margin-top: 20px;
-    margin-left: 10%;
-    grid-area: perfume-image-container;
+    width: 33%;
   }
    
   
-  .perfume-desc-container {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ".";
-    grid-area: perfume-desc-container;
+  .perfume-desc-container {    width: 33%;
+    
   }
   
-  .scent-chart-container { grid-area: scent-chart-container; 
-} */
+  .scent-chart-container {   width: 33%;
+}
  
 
 
@@ -207,12 +190,11 @@ h2 a {
 
 .grid-x{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     color: #0a0a0a;
     font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    margin-left: 50px;
     border: 500px;
 
 }
@@ -222,25 +204,26 @@ h2 a {
     min-height: 0;
     min-width: 0;
     width: 100%;
-    border: 500px;
-    border-radius: 500px;
 }
 
 .accord-box {
     margin: auto;
     max-width: 100%;
+    min-width: 300px;
     cursor: pointer;
-    border-bottom-right-radius: 0.5rem;
-    border-top-right-radius: 0.2rem 0.3rem;
+    /* border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.2rem 0.3rem; */
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    float: left;
 }
 
 .accord-bar{
     text-align: center;
+    float: left;
 }
 
 td.notetype {
@@ -458,10 +441,11 @@ img.np {
 .testimonial-box{
     width:500px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-    background-color: #ffffff;
+    background-color: #cfc7c7;
     padding: 20px;
     margin: 15px;
     cursor: pointer;
+    border-radius: 50px;
 }
 .profile-img{
     width:50px;
